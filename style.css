@@ -1,0 +1,35 @@
+body{
+    margin: 0%;
+    padding-top: 0px;
+}
+
+
+.barra{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: #21465a;
+    color: #ccffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+.barra2{
+    margin-top: 0%;
+    background-color: #28536b;
+    color: #ccffff;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 20px;
+    z-index: 999;
+}
