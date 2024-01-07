@@ -1,12 +1,14 @@
 body{
     margin: 0%;
     padding-top: 0px;
+    background-color: #ccffff;
+}
+a{
+    text-decoration: none;
 }
 
-
 .barra{
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin: 0%;
     background-color: #21465a;
     color: #ccffff;
     padding: 10px;
@@ -15,20 +17,37 @@ body{
     justify-content: space-between;
     align-items: center;
     top: 0px;
-    width: 100%;
     z-index: 999;
 }
 .barra2{
-    margin-top: 0%;
+    margin: 0%;
     background-color: #28536b;
     color: #ccffff;
     padding: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: space-around;
     align-items: center;
     position: sticky;
     top: 0px;
     height: 20px;
     z-index: 999;
+}
+.separação{
+    margin: 15px;
+}
+.estante{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Ilustração{
+    background-color: #fff;
+    border: 3px solid #d6d6d6;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 1%;
 }
