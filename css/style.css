@@ -1,29 +1,40 @@
 body{
     margin: 0%;
-    padding-top: 0px;
+    padding: 0px;
     background-color: #ccffff;
 }
 a{
     text-decoration: none;
 }
 
+p{
+    margin: 0%;
+}
+
 .barra{
     margin: 0%;
-    background-color: #21465a;
+    background-color: #28536b;
     color: #ccffff;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0%;
     top: 0px;
     z-index: 999;
+}
+.titulo{
+    padding: 5px;
+}
+.imagem_para_distracao{
+    margin: 0%;
+    width: 100%;
+    height: auto; 
+    background-color: #21465a;
+    position: relative;
+    padding: 0%;
 }
 .barra2{
     margin: 0%;
     background-color: #28536b;
     color: #ccffff;
-    padding: 5px;
+    padding: 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -42,7 +53,7 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: baseline;
 }
 .Ilustração{
     background-color: #fff;
@@ -50,4 +61,11 @@ a{
     border-radius: 4px;
     padding: 3px;
     margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.imagem{
+    height: auto;
+    width: 190px;
 }
