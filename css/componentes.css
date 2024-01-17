@@ -1,0 +1,154 @@
+body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./img-backgrond/3082270-2440982131.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    backdrop-filter: blur(5px);
+}
+
+p{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*barra de pesquida-------------------------------------------------------*/
+.barra2{
+    margin: 0%;
+    background-color: #242424;
+    
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    height: 30px;
+    z-index: 999;
+}
+
+.barra2infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    top: 0px;
+    height: 20px;
+    width: 90%;
+}
+
+.infosfont{
+    color: #c7c7c7;
+    font-family: sans-serif;
+    font-size: larger;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.menu{
+    max-height: 30px;
+    width: auto;
+}
+
+/*fim da barra de pesquida--------------------------------------------------------*/
+/*coluna oculta------------------------------------------------------------------*/
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 50px;
+}
+
+.panel {
+    background-color: #242424;
+    padding: 20px;
+  
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+.panel_link {
+    color: #585858;
+    font-size: 20px;
+    font-weight: 120;
+    text-decoration: none;
+}
+/*fim da coluna oculta------------------------------------------------------------*/
+/*---------------estante dos principais produtos---------------------------------*/
+.montra{
+    padding-bottom: 5%;
+    margin: 4% 2% 1% 2%;
+}
+
+.titulo_da_estante{
+    color: #c7c7c7;
+    font-family: sans-serif;
+    font-size: larger;
+    height: 30;
+    border-bottom: 3px solid #000000;
+}
+
+.estante_da_montra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.Ilustração{
+    background-color: #fff;
+    border: 3px solid #d7d7d7;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 200px;
+}
+
+.imagem{
+    height: auto;
+    width: auto;
+    max-width:190px;
+    max-height: 300px;
+}
+
+.produto{
+    font: lighter 12px/1.5 Arial, sans-serif;
+    margin: 5px 8px 5px 8px;
+}
+
+.autor{
+    font: 100 9px/1.5 Arial, sans-serif;
+    margin: 0px 8px 0px 8px;
+}
+
+/*-----------fim da estante dos principais produtos-------------------------------
+ Preciso de ajudana barra e no backgrond......................................................................................................
+--barra do fundo-----------------------------------------------------------------*/
+.fim{
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    background-color: #000000;
+}
+/*fim da barra do fundo-----------------------------------------------------------*/
