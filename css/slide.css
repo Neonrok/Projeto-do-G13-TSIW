@@ -1,0 +1,36 @@
+ /* container */
+ #slide-container {
+    width: 100%;
+    position: relative;
+}
+
+/* IMGs Slide */
+.slide {
+    width: 300px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-in-out;
+}
+
+/*botoes <>*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
