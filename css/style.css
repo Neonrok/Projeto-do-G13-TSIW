@@ -28,7 +28,6 @@ p{
     width: 100%;
     height: auto; 
     background-color: #242424;
-    position: relative;
    
     padding: 0%;
     filter: blur(3px);
@@ -129,12 +128,11 @@ p{
 .panel {
     background-color: #242424;
     padding: 20px;
-  
-    height: 30px;
+
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     transform: translateX(-100%);
 }
 
