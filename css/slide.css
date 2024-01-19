@@ -1,8 +1,5 @@
  /* container */
- #slide-container {
-    width: 100%;
-    position: relative;
-}
+
 
 /* IMGs Slide */
 .slide {
@@ -18,7 +15,7 @@
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50px;
+    top: 200px;
     width: auto;
     margin-top: -30px;
     padding: 16px;

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #18206f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #d4af37;
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+    position: relative;
+}
+
+.member {
+    text-align: center;
+    position: relative;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.symbol {
+    text-align: center;
+    margin-top: 2em;
+    position: relative;
+}
+
+.symbol img {
+    width: 300px;
+    height: auto;
+    
+}
+
+.dot {
+    position: absolute;
+    background-color: #ffffff;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+}
+
+.dot.left {
+    top: 20%;
+    left: 10%;
+    animation: moveDot 2.5s ease-in-out infinite alternate;
+}
+
+.dot.right {
+    top: 30%;
+    right: 10%;
+    animation: moveDot 2.8s ease-in-out infinite alternate;
+}
+
+.dot.left-middle {
+    top: 70%;
+    left: 15%;
+    animation: moveDot 2.3s ease-in-out infinite alternate;
+}
+
+.dot.right-middle {
+    top: 80%;
+    right: 25%;
+    animation: moveDot 2.6s ease-in-out infinite alternate;
+}
+
+.dot.left-bottom {
+    bottom: 15%;
+    left: 30%;
+    animation: moveDot 2.7s ease-in-out infinite alternate;
+}
+
+.dot.right-bottom {
+    bottom: 50%;
+    right: 35%;
+    animation: moveDot 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes moveDot {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}

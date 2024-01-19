@@ -1,0 +1,39 @@
+footer {
+    background-color: #d4af37;
+    padding: 20px;
+    color: #000000; 
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+footer div {
+    flex: 1; 
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    color: #000000; 
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
