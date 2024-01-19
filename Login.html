@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+</head>
+<body>
+
+    <div id="container">
+        <form id="loginForm" action="main.html">
+            <h2>Login</h2>
+            <label for="loginUsername">Nome de usuário:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="submit">Login</button>
+            <p>Não tem uma conta? <button onclick="showRegistration()">Registar</button></p>
+        </form>
+
+        
+        
+
+        <div id="registrationSection" style="display: none;">
+            <h2>Registro</h2>
+            <form id="registrationForm" action="main.html">
+                <label for="username">Nome de usuário:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Registar</button>
+            </form>
+        </div>
+
+        <script src="js/loginScript.js"></script>
+    </div>
+</body>
+</html>
