@@ -50,3 +50,57 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+
+
+.dot {
+    position: absolute;
+    background-color: #ffffff;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+}
+
+.dot.left {
+    top: 25%;
+    left: 5%;
+    animation: moveDot 2.5s ease-in-out infinite alternate;
+}
+
+.dot.right {
+    top: 30%;
+    right: 5%;
+    animation: moveDot 2.8s ease-in-out infinite alternate;
+}
+
+.dot.left-middle {
+    top: 70%;
+    left: 5%;
+    animation: moveDot 2.3s ease-in-out infinite alternate;
+}
+
+.dot.right-middle {
+    top: 80%;
+    right: 25%;
+    animation: moveDot 2.6s ease-in-out infinite alternate;
+}
+
+.dot.left-bottom {
+    bottom: 15%;
+    left: 25%;
+    animation: moveDot 2.7s ease-in-out infinite alternate;
+}
+
+.dot.right-bottom {
+    bottom: 60%;
+    right: 35%;
+    animation: moveDot 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes moveDot {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
