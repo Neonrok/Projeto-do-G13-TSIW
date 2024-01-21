@@ -185,6 +185,46 @@ var produtos = [
         imagem: "./img/mousepad1.png",
         preco: 49.99,
         descricao: "É da razer",
+    },
+    {
+        id: 26,
+        nome: "C27G2Z 27 240Hz Gaming Monitor",
+        produtora: "???",
+        imagem: "./img/monitor3.png",
+        preco: 182.99,
+        descricao: "É de 240Hz",
+    },
+    {
+        id: 25,
+        nome: "Msi Optix G24C4 24-Inch 144Hz Gaming Monitor",
+        produtora: "Optix",
+        imagem: "img/monitor2.png",
+        preco: 243.99,
+        descricao: "É de 144Hz",
+    },
+    {
+        id: 24,
+        nome: "Xiaomi BHR5133GL 34'' WQHD LED IPS 144Hz Curved Gaming",
+        produtora: "Xiaomi",
+        imagem: "img/monitor1.png",
+        preco: 110.99,
+        descricao: "É de 144Hz",
+    },
+    {
+        id: 27,
+        nome: "BenQ ZOWIE XL2740 27 inch 240Hz Gaming Monitor",
+        produtora: "???",
+        imagem: "img/monitor4.png",
+        preco: 140.99,
+        descricao: "É de 240Hz",
+    },
+    {
+        id: 28,
+        nome: "C27G2Z 27 240Hz Gaming Monitor",
+        produtora: "???",
+        imagem: "img/monitor5.png",
+        preco: 239.99,
+        descricao: "É de 240Hz",
     }
 
 
