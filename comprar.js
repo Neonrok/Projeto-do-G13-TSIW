@@ -13,9 +13,9 @@ var produtos = [
 function comprar(idP) {
     var produtSelect = produtos.find(produto => produto.id === parseInt(idP));
     var novoDoc = document.implementation.createHTMLDocument();
-    var htmlElement = novoDoc.documentElement;
+    var criar_pagina = novoDoc.documentElement;
 
-    htmlElement.innerHTML = `
+    criar_pagina.innerHTML = `
     <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,14 +25,12 @@ function comprar(idP) {
     <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/barraNav.css">
-    <script src="comprar.js" defer></script>
 </head>
 <body>
     <nav class="barra2">
         <div class="barra2infos">
             <a href="index.html"><img src="img/house-window-svgrepo-com.svg" alt="index"></a>
             <a class="infosfont" href="componentes.html">componentes</a>
-            <a class="infosfont" href="">computador pré montado</a>
             <a class="infosfont" href="">tabletes</a>
             <a class="infosfont" href="">monitores</a>
             <a class="infosfont" href="acessorios.html">acessorios</a>
@@ -76,18 +74,3 @@ function comprar(idP) {
     novaPag.document.write(htmlcriar);
     
 }
-function adicionarAoCarrinho(idP) {
-    console.log("Carrinho carregado!");
-    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    var produtSelect = produtos.find(produto => produto.id === idP);
-  
-    carrinho.push({
-      nome: produtSelect.nome,
-      img: produtSelect.imagem,
-      preco: produtSelect.preco
-    });
-  
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-  
-    window.location.href = 'carrinho.html';
-  }

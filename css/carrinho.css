@@ -48,5 +48,9 @@ body{
     border-right: solid #000000;
 
 }
-
+.titulo{
+    color: #d4af37;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2% 0% 2% 2%;
+}
 /*estrutura das compras-----------------------------------------------------------*/
