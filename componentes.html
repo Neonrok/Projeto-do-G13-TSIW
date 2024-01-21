@@ -10,24 +10,25 @@
     <link rel="stylesheet" href="./css/barraNav.css">
 </head>
 <body>
-    <div class="panel">
-        <div class="panel_top">
-            <div class="links">
-                <a href="componentes.html">componentes</a>
-                <a>computador pré montado</a>
-                <a>tabletes</a>
-                <a>monitores</a>
-                <a>acessorios</a>
-                <a href="">casa inteligente</a>
-                <a>Serviço</a>
-            </div>
+    <nav class="barra2">
+        <div class="barra2infos">
+            <a href="index.html"><img src="img/house-window-svgrepo-com.svg" alt="index"></a>
+            <a class="infosfont" href="componentes.html">componentes</a>
+            <a class="infosfont" href="">computador pré montado</a>
+            <a class="infosfont" href="">tabletes</a>
+            <a class="infosfont" href="">monitores</a>
+            <a class="infosfont" href="acessorios.html">acessorios</a>
+            <a class="infosfont" href="">casa inteligente</a>
+            <a class="infosfont" href="">Serviço</a>
+            <a href="carrinho.html"><img src="img/cart.svg" alt="Carrinho"></a>
+            <a href="Login.html"><img src="img/userIcon.svg" alt="Login"></a>
         </div>
-    </div>
+    </nav>
 
     <div class="montra">
         <p class="titulo_da_montra">Componentes</p>
         <div class="estante_da_montra">
-            <a class="Ilustração" href="">
+            <a class="Ilustração" onclick="comprar(1)">
                 <img class="imagem" src="./img/intel-core-i9.jpg" alt="jpg">
                 <p class="produto">processador intel core i9   --€</p>
                 <p class="autor">intel</p>
@@ -133,5 +134,7 @@
             <p>Telefone: +351 938 019 355</p>
         </div>
     </footer>
+
+    <script src="comprar.js" defer></script>
 </body>
 </html>
