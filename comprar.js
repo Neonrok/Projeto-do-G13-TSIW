@@ -11,7 +11,7 @@ var produtos = [
 ]
 
 function comprar(idP) {
-    var produtSelect = produtos.find(produto => produto.id === idP);
+    var produtSelect = produtos.find(produto => produto.id === parseInt(idP));
     var novoDoc = document.implementation.createHTMLDocument();
     var htmlElement = novoDoc.documentElement;
 
@@ -25,6 +25,7 @@ function comprar(idP) {
     <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/barraNav.css">
+    <script src="comprar.js" defer></script>
 </head>
 <body>
     <nav class="barra2">
@@ -55,7 +56,7 @@ function comprar(idP) {
                 <div class="preço">${produtSelect.preco}€</div>
                 <p></p>
                 <div class="combo">
-                  <div class="adicionar_carrinho">adicionar ao carrinho</div>
+                  <button class="adicionar_carrinho" onclick="adicionarAoCarrinho(${produtSelect.id})">adicionar ao carrinho</button>
                   <div class="comprar">comprar</div>
                 </div>
                 <div class="descricao">
@@ -73,4 +74,20 @@ function comprar(idP) {
 
     var novaPag = window.open();
     novaPag.document.write(htmlcriar);
+    
 }
+function adicionarAoCarrinho(idP) {
+    console.log("Carrinho carregado!");
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    var produtSelect = produtos.find(produto => produto.id === idP);
+  
+    carrinho.push({
+      nome: produtSelect.nome,
+      img: produtSelect.imagem,
+      preco: produtSelect.preco
+    });
+  
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+  
+    window.location.href = 'carrinho.html';
+  }
