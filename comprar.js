@@ -137,7 +137,56 @@ var produtos = [
         imagem: "./img/Disco sólido SSD interno Western Digital WD Black SN750 WDS200T3X0C 2TB.jpg",
         preco: 249.99,
         descricao: "É de 2T",
+    },
+    {
+        id: 18,
+        nome: "Teclado HyperX",
+        produtora: "HyperX",
+        imagem: "./img/teclado1.png",
+        preco: 99.99,
+        descricao: "É da HyperX",
+    },
+    {
+        id: 19,
+        nome: "Headset Logitech",
+        produtora: "Logitech",
+        imagem: "./img/headset1.png",
+        preco: 69.99,
+        descricao: "É da Logitech",
+    },
+    {
+        id: 20,
+        nome: "Logitech G-pro",
+        produtora: "Logitech",
+        imagem: "./img/mouse1.png",
+        preco: 83.99,
+        descricao: "É da Logitech",
+    },
+    {
+        id: 21,
+        nome: "Cadeira AkRacing",
+        produtora: "AkRacing",
+        imagem: "./img/cadeira1.png",
+        preco: 119.99,
+        descricao: "É uma cadeira",
+    },
+    {
+        id: 22,
+        nome: "HyperX Quadcast",
+        produtora: "HyperX",
+        imagem: "./img/microfone1.png",
+        preco: 89.99,
+        descricao: "É um microfone",
+    },
+    {
+        id: 23,
+        nome: "Mousepad Razer",
+        produtora: "Razer",
+        imagem: "./img/mousepad1.png",
+        preco: 49.99,
+        descricao: "É da razer",
     }
+
 
     
 ]
